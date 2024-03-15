@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  nvim:
+    # Sample env, should be defined in .override depending on system
+    # environment:
+    #   - DIR_PROJECT=/root/workspace
+    #   - DIR_CONFIG=/root/.config
+
+    # build:
+    #   args:
+    #     GIT_GLOBAL_USERNAME: yourusername
+    #     GIT_GLOBAL_EMAIL: youremail
+
+    # volumes should be added in .override depending on system. Sample below
+    # volumes:
+    #   - /home/user/projects:/root/workspace
+      # - /home/user/envs/anenv/nvimdata:/root/.local/share/nvim

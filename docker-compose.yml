@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  nvim:
+    # stdin_open: true
+    # tty: true
+    image: devenv:latest
+
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 5G
+
